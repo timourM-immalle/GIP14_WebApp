@@ -110,6 +110,6 @@ public void ConfigureServices(IServiceCollection services)
   }
 }
 ```
-sindsdien gebruik ik poort `44320`.
+Sindsdien gebruik ik poort `44320`.
 
 Ten slotte bestaat er ook nog een simpele pagina `http://localhost:44320/Punts`, waarbij  men nieuwe punten kan ingeven, bewerken en wissen (het wordt opgeslagen op een database), maar veel spectaculairder is het niet geworden.
