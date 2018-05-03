@@ -10,8 +10,8 @@ public class Leerkrachten
   public int Id { get; set; }
   public string Voornaam { get; set; }
   public string Achternaam { get; set; }
-  public string Email { get; set; }
   public List<Vakken> Opleidingsonderdelen { get; set; }
+  public string Email { get; set; }
 }
 
 public class Leerlingen
@@ -28,8 +28,8 @@ public class Vakken
 {
   public int Id { get; set; }
   public string Naam { get; set; }
-  public List<string> Klassen { get; set; }
-  public Leerkrachten Leerkracht { get; set; }
+  public Leerkrachten Docenten { get; set; }
+  public Leerlingen Scholieren { get; set; }
   public double Score { get; set; }
   public double Mediaan { get; set; }
 }
@@ -37,8 +37,7 @@ public class Vakken
 public class Punten
 {
   public int Id { get; set; }
-  public Vakken Vak { get; set; }
   public double Score { get; set; }
-  public Leerlingen Leerling { get; set; }
+  public Leerlingen Scholier { get; set; }
 }
 ```
